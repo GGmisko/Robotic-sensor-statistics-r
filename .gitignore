@@ -1,0 +1,9 @@
+.Rhistory
+.RData
+.Rproj.user
+*.Rproj
+
+__MACOSX/
+
+human+activity+recognition+using+smartphones/
+UCI HAR Dataset/

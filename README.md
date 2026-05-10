@@ -76,7 +76,7 @@ En el proyecto se realizaron los siguientes procedimientos:
 
 ### Distribución de la aceleración media en X
 
-![Histograma de aceleración en X](histograma_acc_x.png)
+![Histograma de aceleración en X](Figures/histograma_acc_x.png)
 
 La mayoría de los datos se concentran alrededor de valores centrales de aceleración, aunque existen algunos valores alejados asociados posiblemente a movimientos más dinámicos.
 
@@ -84,7 +84,7 @@ La mayoría de los datos se concentran alrededor de valores centrales de acelera
 
 ### Cantidad de registros por actividad
 
-![Frecuencia de actividades](frecuencia_actividades.png)
+![Frecuencia de actividades](Figures/frecuencia_actividades.png)
 
 La base de datos presenta una distribución relativamente balanceada entre las diferentes actividades analizadas.
 
@@ -92,7 +92,7 @@ La base de datos presenta una distribución relativamente balanceada entre las d
 
 ### Aceleración media en X por actividad
 
-![Boxplot aceleración X](boxplot_acc_x.png)
+![Boxplot aceleración X](Figures/boxplot_acc_x.png)
 
 El diagrama de caja permite observar diferencias en la dispersión y presencia de valores atípicos según la actividad realizada.
 
@@ -100,7 +100,7 @@ El diagrama de caja permite observar diferencias en la dispersión y presencia d
 
 ### Relación entre aceleración media en X y Y
 
-![Relación aceleración X Y](scatter_acc_xy.png)
+![Relación aceleración X Y](Figures/scatter_acc_xy.png)
 
 El gráfico de dispersión muestra agrupaciones parcialmente diferenciables entre actividades, lo que indica que las señales de aceleración contienen información útil para distinguir patrones de movimiento.
 

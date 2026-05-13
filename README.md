@@ -73,6 +73,76 @@ En el proyecto se realizaron los siguientes procedimientos:
 ---
 
 ## Resultados principales
+Pega esta sección después de “Resultados principales” y antes de “Archivos generados”:
+
+---
+
+## Generación de imágenes
+
+Las imágenes usadas en este repositorio no se generan automáticamente al ejecutar el código base. Para generarlas, primero se debe ejecutar el script principal `proyecto.R` hasta crear el objeto `datos_seleccionados`. Luego, se pueden ejecutar los siguientes comandos en la consola de R.
+
+### Histograma de aceleración media en X
+
+```r
+ggplot(datos_seleccionados, aes(x = Acc_Media_X)) +
+  geom_histogram(bins = 30) +
+  labs(
+    title = "Distribución de la aceleración media en X",
+    x = "Aceleración media en X",
+    y = "Frecuencia"
+  ) +
+  theme_minimal()
+
+ggsave("Figures/histograma_acc_x.png", width = 8, height = 5)
+```
+
+### Boxplot por actividad
+
+```r
+ggplot(datos_seleccionados, aes(x = Activity, y = Acc_Media_X)) +
+  geom_boxplot() +
+  labs(
+    title = "Aceleración media en X por actividad",
+    x = "Actividad",
+    y = "Aceleración media en X"
+  ) +
+  theme_minimal()
+
+ggsave("Figures/boxplot_acc_x.png", width = 8, height = 5)
+```
+
+### Scatter plot
+
+```r
+ggplot(datos_seleccionados,
+       aes(x = Acc_Media_X,
+           y = Acc_Media_Y,
+           color = Activity)) +
+  geom_point(alpha = 0.5) +
+  labs(
+    title = "Relación entre aceleración en X y Y",
+    x = "Aceleración media X",
+    y = "Aceleración media Y"
+  ) +
+  theme_minimal()
+
+ggsave("Figures/scatter_acc_xy.png", width = 8, height = 5)
+```
+
+### Barras de actividades
+
+```r
+ggplot(datos_seleccionados, aes(x = Activity)) +
+  geom_bar() +
+  labs(
+    title = "Cantidad de registros por actividad",
+    x = "Actividad",
+    y = "Frecuencia"
+  ) +
+  theme_minimal()
+
+ggsave("Figures/frecuencia_actividades.png", width = 8, height = 5)
+```
 
 ### Distribución de la aceleración media en X
 

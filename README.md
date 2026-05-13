@@ -73,8 +73,6 @@ En el proyecto se realizaron los siguientes procedimientos:
 ---
 
 ## Resultados principales
-Pega esta sección después de “Resultados principales” y antes de “Archivos generados”:
-
 ---
 
 ## Generación de imágenes
